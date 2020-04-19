@@ -21,12 +21,13 @@ docker run --rm -p 8088:8080 -p 8443:8443 byteleaf/wiremock
 version: "3.3"
 services:
   wiremock:
-    build:
-      context: .
+    image: byteleaf/wiremock
+    command: --global-response-templating
     ports:
       - "8088:8080"
       - "8443:8443"
     volumes:
       - ./__files:/home/wiremock/__files
       - ./mappings:/home/wiremock/mappings
+
 ```
