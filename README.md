@@ -13,6 +13,7 @@ docker build -t \<domain\>/wiremock .
 ## Run
 
 docker run --rm -p 8088:8080 -p 8443:8443 \<domain\>/wiremock
+
 docker run --rm -p 8088:8080 -p 8443:8443 byteleaf/wiremock
 
 ## Run with docker-compose
