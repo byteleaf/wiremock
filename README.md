@@ -2,7 +2,7 @@
 
 ## Build
 
-docker build -t \\<domain\\>/wiremock .
+docker build -t \<domain\>/wiremock .
 
 ## Run
 
